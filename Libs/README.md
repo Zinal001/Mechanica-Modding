@@ -1,0 +1,11 @@
+## Files required in this directory:
+- 0Harmony.dll *(Can be found in [MechanicaFolder]\BepInEx\core\)*
+- BepInEx.dll *(Can be found in [MechanicaFolder]\BepInEx\core\)*
+- BepInEx.Harmony.dll *(Can be found in [MechanicaFolder]\BepInEx\core\)*
+- Assembly-CSharp.dll *(Can be found in [MechanicaFolder]\Mechanica_Data\Managed\)*
+- UnityEngine.CoreModule.dll *(Can be found in [MechanicaFolder]\Mechanica_Data\Managed\)*
+- UnityEngine.dll *(Can be found in [MechanicaFolder]\Mechanica_Data\Managed\)*
+- UnityEngine.InputLegacyModule.dll *(Can be found in [MechanicaFolder]\Mechanica_Data\Managed\)*
+- UnityEngine.InputModule.dll *(Can be found in [MechanicaFolder]\Mechanica_Data\Managed\)*
+- UnityEngine.Physics2DModule.dll *(Can be found in [MechanicaFolder]\Mechanica_Data\Managed\)*
+- UnityEngine.PhysicsModule.dll *(Can be found in [MechanicaFolder]\Mechanica_Data\Managed\)*
