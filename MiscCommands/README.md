@@ -1,4 +1,4 @@
-# Chat Commands
+# Misc Commands
 A plugin with various chat commands.
 
 This plugin required the **Chat Commands** plugin which can be found [here](https://github.com/Zinal001/Mechanica-Modding/tree/master/ChatCommands)!
