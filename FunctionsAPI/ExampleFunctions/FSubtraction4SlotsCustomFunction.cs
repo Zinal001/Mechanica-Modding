@@ -7,7 +7,7 @@ using System.Text;
 namespace FunctionsAPI.ExampleFunctions
 {
     /// <summary>
-    /// An extension of the "Add Numbers" function with 4 inputs instead of 2.
+    /// An extension of the "Subtract Numbers" function with 4 inputs instead of 2.
     /// </summary>
     public class FSubtraction4SlotsCustomFunction : FImplementation
     {
