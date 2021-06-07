@@ -9,6 +9,14 @@ namespace MiscCommands
     {
         private static Game.EntityFramework.CraftableObject[] _AllItems = null;
 
+        private static String[] _MiscItems = new string[] {
+            "Components/ResearchCrystal/ResearchCrystal",
+            "Components/Stick/Stick",
+            "Components/Sand/Sand",
+            "Objects/Functional/Computer/Computer",
+            "Components/Wood/Wood"
+        };
+
         internal static System.Collections.IEnumerator LoadAllItems()
         {
             while (!Game.Crafting.CraftingMenu.InstanceExists)
@@ -63,6 +71,18 @@ namespace MiscCommands
                 }
             }
 
+            foreach(String miscItem in _MiscItems)
+            {
+                if(!items.Any(i => i.pPrefabAssetPath == miscItem))
+                {
+                    Game.EntityFramework.CraftableObject component = UnityEngine.Resources.Load<UnityEngine.GameObject>(miscItem).GetComponent<Game.EntityFramework.CraftableObject>();
+                    if (component == null)
+                        MiscCommandsMod.ModLogger.LogWarning($"Failed to load object '{miscItem}'");
+                    else
+                        items.Add(component);
+                }
+            }
+
             _AllItems = items.ToArray();
             MiscCommandsMod.ModLogger.LogInfo("All items loaded");
         }
@@ -111,6 +131,11 @@ namespace MiscCommands
                             }
                         }
                     }
+                }
+
+                if(!items.Any(i => i.pPrefabAssetPath == "Components/ResearchCrystal/ResearchCrystal"))
+                {
+                    
                 }
 
                 _AllItems = items.ToArray();
