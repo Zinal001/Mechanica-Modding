@@ -4,7 +4,7 @@ using System;
 namespace FunctionsAPI
 {
 
-    [BepInPlugin("tech.zinals.plugins.functionsapi", "Functions API", "1.0.1")]
+    [BepInPlugin("tech.zinals.plugins.functionsapi", "Functions API", "1.0.2")]
     public class FunctionsAPIMod : BaseUnityPlugin
     {
         internal static BepInEx.Logging.ManualLogSource ModLogger { get; private set; }

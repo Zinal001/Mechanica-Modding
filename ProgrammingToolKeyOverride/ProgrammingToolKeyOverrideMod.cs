@@ -4,7 +4,7 @@ using System;
 
 namespace ProgrammingToolKeyOverride
 {
-    [BepInPlugin("tech.zinals.plugins.programmingtoolkeyoverride", "Programming Tool Key Override", "1.0.0")]
+    [BepInPlugin("tech.zinals.plugins.programmingtoolkeyoverride", "Programming Tool Key Override", "1.0.1")]
     public class ProgrammingToolKeyOverrideMod : BaseUnityPlugin
     {
 
