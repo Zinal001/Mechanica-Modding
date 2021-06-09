@@ -4,7 +4,7 @@ using System;
 namespace ChatCommands
 {
 
-    [BepInPlugin("tech.zinals.plugins.chatcommands", "Chat Commands", "1.0.0.0")]
+    [BepInPlugin("tech.zinals.plugins.chatcommands", "Chat Commands", "1.0.1")]
     public class ChatCommandMod : BaseUnityPlugin
     {
 

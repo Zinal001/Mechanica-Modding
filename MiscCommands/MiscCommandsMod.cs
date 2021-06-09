@@ -4,7 +4,7 @@ using System;
 namespace MiscCommands
 {
 
-    [BepInPlugin("tech.zinals.plugins.misccommands", "Misc Commands", "1.0.0.0")]
+    [BepInPlugin("tech.zinals.plugins.misccommands", "Misc Commands", "1.0.2")]
     [BepInDependency("tech.zinals.plugins.chatcommands", BepInDependency.DependencyFlags.HardDependency)]
     public class MiscCommandsMod : BaseUnityPlugin
     {

@@ -31,8 +31,4 @@
     </Reference>
   </ItemGroup>
 
-  <Target Name="PostBuild" AfterTargets="PostBuildEvent">
-    <Exec Command="echo a | xcopy &quot;$(TargetDir)*.dll&quot; &quot;D:\Games\Steam\steamapps\common\Mechanica\BepInEx\plugins\$(ProjectName)\*.dll&quot;" />
-  </Target>
-
 </Project>

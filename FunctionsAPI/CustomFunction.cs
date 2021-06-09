@@ -14,6 +14,7 @@ namespace FunctionsAPI
         {
             Function = function;
             DirectoryPath = directoryPath;
+            Configs.AddConfig(this);
         }
     }
 }

@@ -7,7 +7,19 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "MiscCommands", "MiscCommand
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ChatCommands", "ChatCommands\ChatCommands.csproj", "{3DE8F9FE-0BCC-43A8-8A4E-5C909257B2EC}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FunctionsAPI", "FunctionsAPI\FunctionsAPI.csproj", "{22747507-4455-4181-BCC8-7832C337C40E}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "FunctionsAPI", "FunctionsAPI\FunctionsAPI.csproj", "{22747507-4455-4181-BCC8-7832C337C40E}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "FuelPercentageFunction", "FuelPercentageFunction\FuelPercentageFunction.csproj", "{B25EC166-8389-4406-AC40-469AC9943A55}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ScriptReplication", "ScriptReplication\ScriptReplication.csproj", "{825CDE4C-756B-4BFF-9243-12E640E4DF21}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ProgrammingToolKeyOverride", "ProgrammingToolKeyOverride\ProgrammingToolKeyOverride.csproj", "{4C001F55-83DA-428D-99D3-451CCDBBC026}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FurnaceExtensions", "FurnaceExtensions\FurnaceExtensions.csproj", "{EE287566-5A7E-4DC7-AB06-A991F2CE0191}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MachineExtensionLib", "MachineExtensionLib\MachineExtensionLib.csproj", "{9B079870-312A-43E8-A12A-FCB61DCA51A5}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AutoMinerExtensions", "AutoMinerExtensions\AutoMinerExtensions.csproj", "{878D63FD-88A0-4FC4-A05F-3857C33F1EF9}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -27,6 +39,30 @@ Global
 		{22747507-4455-4181-BCC8-7832C337C40E}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{22747507-4455-4181-BCC8-7832C337C40E}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{22747507-4455-4181-BCC8-7832C337C40E}.Release|Any CPU.Build.0 = Release|Any CPU
+		{B25EC166-8389-4406-AC40-469AC9943A55}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B25EC166-8389-4406-AC40-469AC9943A55}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B25EC166-8389-4406-AC40-469AC9943A55}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B25EC166-8389-4406-AC40-469AC9943A55}.Release|Any CPU.Build.0 = Release|Any CPU
+		{825CDE4C-756B-4BFF-9243-12E640E4DF21}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{825CDE4C-756B-4BFF-9243-12E640E4DF21}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{825CDE4C-756B-4BFF-9243-12E640E4DF21}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{825CDE4C-756B-4BFF-9243-12E640E4DF21}.Release|Any CPU.Build.0 = Release|Any CPU
+		{4C001F55-83DA-428D-99D3-451CCDBBC026}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{4C001F55-83DA-428D-99D3-451CCDBBC026}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{4C001F55-83DA-428D-99D3-451CCDBBC026}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{4C001F55-83DA-428D-99D3-451CCDBBC026}.Release|Any CPU.Build.0 = Release|Any CPU
+		{EE287566-5A7E-4DC7-AB06-A991F2CE0191}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{EE287566-5A7E-4DC7-AB06-A991F2CE0191}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{EE287566-5A7E-4DC7-AB06-A991F2CE0191}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{EE287566-5A7E-4DC7-AB06-A991F2CE0191}.Release|Any CPU.Build.0 = Release|Any CPU
+		{9B079870-312A-43E8-A12A-FCB61DCA51A5}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{9B079870-312A-43E8-A12A-FCB61DCA51A5}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{9B079870-312A-43E8-A12A-FCB61DCA51A5}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{9B079870-312A-43E8-A12A-FCB61DCA51A5}.Release|Any CPU.Build.0 = Release|Any CPU
+		{878D63FD-88A0-4FC4-A05F-3857C33F1EF9}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{878D63FD-88A0-4FC4-A05F-3857C33F1EF9}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{878D63FD-88A0-4FC4-A05F-3857C33F1EF9}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{878D63FD-88A0-4FC4-A05F-3857C33F1EF9}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

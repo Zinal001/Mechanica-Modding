@@ -5,6 +5,10 @@
   </PropertyGroup>
 
   <ItemGroup>
+    <ProjectReference Include="..\MachineExtensionLib\MachineExtensionLib.csproj" />
+  </ItemGroup>
+
+  <ItemGroup>
     <Reference Include="0Harmony">
       <HintPath>..\Libs\0Harmony.dll</HintPath>
       <Private>false</Private>
@@ -31,8 +35,14 @@
     </Reference>
   </ItemGroup>
 
+  <ItemGroup>
+    <None Update="README.md">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+  </ItemGroup>
+
   <Target Name="PostBuild" AfterTargets="PostBuildEvent">
-    <Exec Command="echo a | xcopy &quot;$(TargetDir)*.dll&quot; &quot;D:\Games\Steam\steamapps\common\Mechanica\BepInEx\plugins\$(ProjectName)\*.dll&quot;" />
+    <Exec Command="echo a | xcopy &quot;$(TargetDir)*.dll&quot; &quot;D:\Games\Steam\steamapps\common\Mechanica\BepInEx\plugins\$(ProjectName)\*.dll&quot;&#xD;&#xA;echo a | xcopy &quot;$(TargetDir)*.md&quot; &quot;D:\Games\Steam\steamapps\common\Mechanica\BepInEx\plugins\$(ProjectName)\*.md&quot;" />
   </Target>
 
 </Project>
