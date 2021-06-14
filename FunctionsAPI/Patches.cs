@@ -27,5 +27,12 @@ namespace FunctionsAPI
             FunctionsAPIMod.ModLogger.LogInfo($"{addedFuncs} custom functions registered");
         }
 
+        [HarmonyPatch(typeof(Game.FunctionalityFramework.CommonFunctionality), "AddFunction")]
+        [HarmonyPrefix()]
+        static bool Patch_CommonFunctionality_AddFunction(Game.FunctionalityFramework.CommonFunctionality __instance, Game.FunctionalityFramework.FImplementation function)
+        {
+            return !FunctionsSystem.IsBlacklisted(function.pFName);
+        }
+
     }
 }

@@ -4,7 +4,7 @@ using System;
 namespace FunctionsAPI
 {
 
-    [BepInPlugin("tech.zinals.plugins.functionsapi", "Functions API", "1.0.2")]
+    [BepInPlugin("tech.zinals.plugins.functionsapi", "Functions API", "1.0.3")]
     public class FunctionsAPIMod : BaseUnityPlugin
     {
         internal static BepInEx.Logging.ManualLogSource ModLogger { get; private set; }
@@ -12,7 +12,7 @@ namespace FunctionsAPI
         public FunctionsAPIMod()
         {
             ModLogger = Logger;
-            Configs._ModConfig = Config;
+            Configs.Initialize(Config);
 
             AddExampleFunctions();
             HarmonyLib.Harmony.CreateAndPatchAll(typeof(Patches));
@@ -22,6 +22,7 @@ namespace FunctionsAPI
         {
             FunctionsSystem.Overwrite(new CustomFunction(new ExampleFunctions.FAddition4SlotsCustomFunction(null), "/Math"));
             FunctionsSystem.Overwrite(new CustomFunction(new ExampleFunctions.FSubtraction4SlotsCustomFunction(null), "/Math"));
+            FunctionsSystem.Overwrite(new CustomFunction(new ExampleFunctions.ExtendedWaitCustomFunction(null), "/Execution Control"));
         }
     }
 }
